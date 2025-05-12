@@ -1,0 +1,90 @@
+2025-05-08 06:57:11,182 - build - log - INFO - HydroMT version: 0.10.1
+2025-05-08 06:57:11,182 - build - main - INFO - Building instance of sfincs model at /home/ali/hydromt_sfincs-1.2.0/examples/indus_sfincs_base.
+2025-05-08 06:57:11,182 - build - main - INFO - User settings:
+2025-05-08 06:57:11,311 - build - data_catalog - INFO - Parsing data catalog from /home/ali/Downloads/indus-data/data_catalog.yml
+2025-05-08 06:57:11,322 - build - model_api - INFO - Initializing sfincs model from hydromt_sfincs (v1.2.0).
+2025-05-08 06:57:11,323 - build - model_api - INFO - setup_grid_from_region.region: {'geom': 'data/region.geojson'}
+2025-05-08 06:57:11,323 - build - model_api - INFO - setup_grid_from_region.res: 250
+2025-05-08 06:57:11,323 - build - model_api - INFO - setup_grid_from_region.crs: utm
+2025-05-08 06:57:11,323 - build - model_api - INFO - setup_grid_from_region.rotated: True
+2025-05-08 06:57:11,323 - build - model_api - INFO - setup_grid_from_region.hydrography_fn: None
+2025-05-08 06:57:11,323 - build - model_api - INFO - setup_grid_from_region.basin_index_fn: None
+2025-05-08 06:57:11,323 - build - model_api - INFO - setup_grid_from_region.align: False
+2025-05-08 06:57:11,323 - build - model_api - INFO - setup_grid_from_region.dec_origin: 0
+2025-05-08 06:57:11,323 - build - model_api - INFO - setup_grid_from_region.dec_rotation: 3
+2025-05-08 06:57:11,324 - build - geodataframe - INFO - Reading  vector data from data/region.geojson
+2025-05-08 06:57:11,332 - build - model_api - INFO - setup_dep.datasets_dep: [{'elevtn': 'merit_hydro', 'zmin': 0.001}, {'elevtn': 'gebco'}]
+2025-05-08 06:57:11,332 - build - model_api - INFO - setup_dep.buffer_cells: 0
+2025-05-08 06:57:11,332 - build - model_api - INFO - setup_dep.interp_method: linear
+2025-05-08 06:57:11,500 - build - rasterdataset - INFO - Reading merit_hydro raster data from /home/ali/Downloads/indus-data/merit_hydro/{variable}.tif
+2025-05-08 06:57:11,575 - build - rasterdataset - INFO - Reading gebco raster data from /home/ali/Downloads/indus-data/gebco.tif
+2025-05-08 06:57:12,894 - build - sfincs - WARNING - Interpolate elevation at 29000 cells
+2025-05-08 06:57:12,985 - build - model_api - INFO - setup_mask_active.mask: /home/ali/hydromt_sfincs-1.2.0/examples/data/region.geojson
+2025-05-08 06:57:12,985 - build - model_api - INFO - setup_mask_active.include_mask: None
+2025-05-08 06:57:12,985 - build - model_api - INFO - setup_mask_active.exclude_mask: None
+2025-05-08 06:57:12,985 - build - model_api - INFO - setup_mask_active.mask_buffer: 0
+2025-05-08 06:57:12,985 - build - model_api - INFO - setup_mask_active.zmin: -5
+2025-05-08 06:57:12,985 - build - model_api - INFO - setup_mask_active.zmax: None
+2025-05-08 06:57:12,985 - build - model_api - INFO - setup_mask_active.fill_area: 10.0
+2025-05-08 06:57:12,985 - build - model_api - INFO - setup_mask_active.drop_area: 0.0
+2025-05-08 06:57:12,985 - build - model_api - INFO - setup_mask_active.connectivity: 8
+2025-05-08 06:57:12,985 - build - model_api - INFO - setup_mask_active.all_touched: True
+2025-05-08 06:57:12,985 - build - model_api - INFO - setup_mask_active.reset_mask: True
+2025-05-08 06:57:12,987 - build - geodataframe - INFO - Reading  vector data from /home/ali/hydromt_sfincs-1.2.0/examples/data/region.geojson
+2025-05-08 06:57:13,253 - build - regulargrid - INFO - 81 gaps outside valid elevation range < 10.0 km2.
+2025-05-08 06:57:13,272 - build - sfincs - INFO - Derive region geometry based on active cells.
+2025-05-08 06:57:13,350 - build - model_api - WARNING - Replacing geom: region
+2025-05-08 06:57:13,351 - build - model_api - INFO - setup_mask_bounds.btype: waterlevel
+2025-05-08 06:57:13,351 - build - model_api - INFO - setup_mask_bounds.include_mask: None
+2025-05-08 06:57:13,351 - build - model_api - INFO - setup_mask_bounds.exclude_mask: None
+2025-05-08 06:57:13,351 - build - model_api - INFO - setup_mask_bounds.include_mask_buffer: 0
+2025-05-08 06:57:13,351 - build - model_api - INFO - setup_mask_bounds.zmin: None
+2025-05-08 06:57:13,351 - build - model_api - INFO - setup_mask_bounds.zmax: -1
+2025-05-08 06:57:13,351 - build - model_api - INFO - setup_mask_bounds.connectivity: 8
+2025-05-08 06:57:13,351 - build - model_api - INFO - setup_mask_bounds.all_touched: False
+2025-05-08 06:57:13,351 - build - model_api - INFO - setup_mask_bounds.reset_bounds: False
+2025-05-08 06:57:13,492 - build - sfincs - INFO - Writing model data to /home/ali/hydromt_sfincs-1.2.0/examples/indus_sfincs_base
+2025-05-08 06:57:13,529 - build - sfincs - INFO - Write raster file(s) for grid to 'gis' subfolder
+2025-05-08 06:57:13,939 - build - sfincs - INFO - Write geom files
+2025-05-08 06:57:13,940 - build - sfincs - INFO - Write vector file(s) for geoms to 'gis' subfolder
+2025-05-08 06:57:13,961 - build - sfincs - WARNING - zsini not in states, skipping
+2025-05-08 06:59:36,614 - update - log - INFO - HydroMT version: 0.10.1
+2025-05-08 06:59:36,615 - update - main - INFO - Updating sfincs model at /home/ali/hydromt_sfincs-1.2.0/examples/indus_sfincs_base (r+).
+2025-05-08 06:59:36,615 - update - main - INFO - Output dir: /home/ali/hydromt_sfincs-1.2.0/examples/indus_sfincs_base
+2025-05-08 06:59:36,615 - update - main - INFO - User settings:
+2025-05-08 06:59:36,752 - update - data_catalog - INFO - Parsing data catalog from /home/ali/Downloads/indus-data/data_catalog.yml
+2025-05-08 06:59:36,764 - update - model_api - WARNING - Model dir already exists and files might be overwritten: /home/ali/hydromt_sfincs-1.2.0/examples/indus_sfincs_base/gis.
+2025-05-08 06:59:36,764 - update - model_api - INFO - Initializing sfincs model from hydromt_sfincs (v1.2.0).
+2025-05-08 06:59:36,779 - update - model_api - INFO - setup_observation_points.locations: /home/ali/hydromt_sfincs-1.2.0/examples/data/compound_example_observation_points.geojson
+2025-05-08 06:59:36,779 - update - model_api - INFO - setup_observation_points.merge: True
+2025-05-08 06:59:36,781 - update - geodataframe - INFO - Reading  vector data from /home/ali/hydromt_sfincs-1.2.0/examples/data/compound_example_observation_points.geojson
+2025-05-08 06:59:36,855 - update - model_api - INFO - setup_waterlevel_forcing.geodataset: gtsm_era5
+2025-05-08 06:59:36,855 - update - model_api - INFO - setup_waterlevel_forcing.timeseries: None
+2025-05-08 06:59:36,855 - update - model_api - INFO - setup_waterlevel_forcing.locations: None
+2025-05-08 06:59:36,855 - update - model_api - INFO - setup_waterlevel_forcing.offset: None
+2025-05-08 06:59:36,855 - update - model_api - INFO - setup_waterlevel_forcing.buffer: 2000
+2025-05-08 06:59:36,855 - update - model_api - INFO - setup_waterlevel_forcing.merge: True
+2025-05-08 07:01:04,968 - update - model_api - INFO - setup_precip_forcing_from_grid.precip: era5_precip
+2025-05-08 07:01:04,968 - update - model_api - INFO - setup_precip_forcing_from_grid.dst_res: None
+2025-05-08 07:01:04,968 - update - model_api - INFO - setup_precip_forcing_from_grid.cumulative_input: True
+2025-05-08 07:01:04,968 - update - model_api - INFO - setup_precip_forcing_from_grid.time_label: right
+2025-05-08 07:01:04,968 - update - model_api - INFO - setup_precip_forcing_from_grid.aggregate: False
+2025-05-08 07:01:04,985 - update - rasterdataset - INFO - Reading era5_precip netcdf data from /home/ali/Downloads/indus-data/precip.nc
+2025-05-08 07:01:05,049 - update - model_api - INFO - setup_wind_forcing_from_grid.wind: era5_wind
+2025-05-08 07:01:05,049 - update - model_api - INFO - setup_wind_forcing_from_grid.dst_res: None
+2025-05-08 07:01:05,050 - update - rasterdataset - INFO - Reading era5_wind netcdf data from /home/ali/Downloads/indus-data/wind.nc
+2025-05-08 07:01:05,148 - update - model_api - INFO - setup_pressure_forcing_from_grid.press: era5_msl
+2025-05-08 07:01:05,148 - update - model_api - INFO - setup_pressure_forcing_from_grid.dst_res: None
+2025-05-08 07:01:05,148 - update - model_api - INFO - setup_pressure_forcing_from_grid.fill_value: 101325
+2025-05-08 07:01:05,148 - update - rasterdataset - INFO - Reading era5_msl netcdf data from /home/ali/Downloads/indus-data/msl.nc
+2025-05-08 07:01:05,203 - update - model_api - INFO - setup_cn_infiltration.cn: gcn250
+2025-05-08 07:01:05,203 - update - model_api - INFO - setup_cn_infiltration.antecedent_moisture: avg
+2025-05-08 07:01:05,203 - update - model_api - INFO - setup_cn_infiltration.reproj_method: med
+2025-05-08 07:01:05,208 - update - rasterdataset - INFO - Reading gcn250 raster data from /home/ali/Downloads/indus-data/gcn250/GCN250_*.tif
+2025-05-08 07:01:06,057 - update - sfincs - INFO - Writing model data to /home/ali/hydromt_sfincs-1.2.0/examples/indus_sfincs_base
+2025-05-08 07:01:06,737 - update - sfincs - INFO - Write raster file(s) for grid to 'gis' subfolder
+2025-05-08 07:01:07,984 - update - sfincs - INFO - Write geom files
+2025-05-08 07:01:07,986 - update - sfincs - INFO - Write vector file(s) for geoms to 'gis' subfolder
+2025-05-08 07:01:08,010 - update - sfincs - INFO - Write forcing files
+2025-05-08 07:01:08,018 - update - sfincs - INFO - Write vector file(s) for forcing.bzs to 'gis' subfolder
+2025-05-08 07:01:08,101 - update - sfincs - WARNING - zsini not in states, skipping
