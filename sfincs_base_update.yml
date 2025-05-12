@@ -1,0 +1,34 @@
+setup_observation_lines:
+    locations: data//compound_example_observation_lines.geojson 
+setup_observation_points:
+  locations: data//compound_example_observation_points.geojson       # Note that this is local data and only valid for this example
+
+setup_waterlevel_forcing:
+  geodataset: gtsm_era5
+  buffer: 2000                                                        # [m] find points within 2 km of waterlevel boundary
+
+setup_discharge_forcing:
+  timeseries: data//compound_dis_timeseries.csv
+  locations: data//compound_src_locations.geojson                     # Note that this is local data and only valid for this example
+setup_manning_roughness:
+    
+setup_precip_forcing_from_grid:
+  precip: era5_precip
+ 
+setup_wind_forcing_from_grid:
+  wind: era5_wind
+
+setup_pressure_forcing_from_grid:
+  press: era5_msl
+setup_cn_infiltration:
+    cn: gcn250
+    antecedent_moisture: wet
+    
+#setup_river_inflow:
+#    hydrography: merit_hydro
+
+setup_river_outflow:
+    hydrography: merit_hydro
+       
+    
+    
